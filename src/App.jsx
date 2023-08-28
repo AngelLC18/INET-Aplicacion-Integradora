@@ -2,73 +2,52 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="parent">
       <div
+        className="bottom"
         style={{
-          width: 390,
-          height: 844,
-          position: "relative",
-          background: "white",
+          width: 281,
+          height: 105,
+          left: 55,
+          top: 663,
+          position: "absolute",
+          justifyContent: "center",
+          alignItems: "center",
+          display: "inline-flex",
         }}
       >
-        <div
+        <img
           style={{
             width: 281,
             height: 105,
-            left: 55,
-            top: 663,
-            position: "absolute",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "inline-flex",
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            borderRadius: 16,
           }}
-        >
-          <img
-            style={{
-              width: 281,
-              height: 105,
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-              borderRadius: 16,
-            }}
-            src="https://via.placeholder.com/281x105"
-          />
-        </div>
-        <div
-          style={{
-            width: 343,
-            height: 192,
-            left: 24,
-            top: 287,
-            position: "absolute",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "inline-flex",
-          }}
-        >
-          <img
-            style={{ width: 343, height: 192 }}
-            src="https://via.placeholder.com/343x192"
-          />
-        </div>
-        <div
-          style={{
-            width: 252,
-            height: 96,
-            left: 69,
-            top: 217,
-            position: "absolute",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "inline-flex",
-          }}
-        >
-          <img
-            style={{ width: 252, height: 96 }}
-            src="https://via.placeholder.com/252x96"
-          />
-        </div>
+          src="/src/assets/Ministerio de Educación celeste.png"
+        />
       </div>
-    </>
+      <div
+        className="middle"
+        style={{
+          width: 343,
+          height: 192,
+          left: 24,
+          top: 287,
+          position: "absolute",
+          justifyContent: "center",
+          alignItems: "center",
+          display: "inline-flex",
+        }}
+      >
+        <img
+          style={{ width: 343, height: 192 }}
+          src="https://via.placeholder.com/343x192"
+        />
+      </div>
+      <div className="logo">
+        <img src="/src/assets/INET white.png" alt="inet-white" />
+      </div>
+    </div>
   );
 }
 
