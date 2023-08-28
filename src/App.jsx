@@ -9,7 +9,7 @@ function App() {
           width: 281,
           height: 105,
           left: 55,
-          top: 663,
+          top: 463,
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",
@@ -32,19 +32,24 @@ function App() {
           width: 343,
           height: 192,
           left: 24,
-          top: 287,
+          top: 187,
           position: "absolute",
           justifyContent: "center",
           alignItems: "center",
           display: "inline-flex",
         }}
-      >
-        <img
-          style={{ width: 343, height: 192 }}
-          src="https://via.placeholder.com/343x192"
-        />
+    ><div class="wrapper">
+      <div class="block mover"></div>
+      <div class="block jumper"></div>
+      <div class="block jumper"></div>
+      <div class="block jumper"></div>
+      <div class="block jumper"></div>
+      
+    </div>
+  
+        
       </div>
-      <div className="logo">
+      <div className="logo" style={{ top:40 }}>
         <img src="/src/assets/INET white.png" alt="inet-white" />
       </div>
     </div>
@@ -52,3 +57,4 @@ function App() {
 }
 
 export default App;
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
