@@ -1,6 +1,7 @@
 :root{
     --color-inet: #0E68AF;
     --color-black: #000000;
+    --color-white: #ffffff;
     --size-btn-collapse: 10.5rem;
     --time-animation: 0.3s;
     --box-shadow: 3px 7px 7px rgba(0 0 0 /22%);
@@ -20,6 +21,7 @@ html{
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #0E68AF;
 }
 .parent {
     display: grid; 
@@ -35,7 +37,7 @@ header{
     grid-area: header;
     height: 64.19px;
     margin: 0%;
-    background-color: var(--color-inet);
+    background-color: var(--color-white);
     display: flex;
     align-items: center;
     position: sticky;
@@ -44,28 +46,75 @@ header{
     margin-left: 10px;
     
 }
-main{
+main {
+    
     grid-area: main;
     height: 100vh;
     margin: 0px;
-
-}
-.boton{
-    margin: 10px;
-    height: 150px;
-    width: 300px;
-    background-color: var(--color-inet);
-    border-radius: 12px;
+  }
+  
+  .boton-container {
     
-}
-.boton:hover{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 botones por fila en todas las pantallas */
+    gap: 20px; /* Espacio entre los botones */
+    margin: 10px;
+  }
+  
+  .boton {
+    
+    cursor: pointer;
+    
+    width: 100%; /* Ancho al 100% para llenar la celda de la cuadrícula */
+    height: 150px;
+    border-radius: 12px;
+    transition: all 0.3s;
+    background-size: 400px auto;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.287),
+        rgba(0, 0, 0, 0.287)
+      ),
+      url(https://aptus.com.ar/wp-content/uploads/2022/08/aulas-moviles.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+    
+  
+  .boton:hover {
+    
     transform: scale(1.03);
     transition: var(--time-animation);
-}
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.674),
+        rgba(0, 0, 0, 0.685)
+      ),
+      url(https://aptus.com.ar/wp-content/uploads/2022/08/aulas-moviles.jpeg);
+  }
+/* Media query para notebooks/tablets */
+@media (max-width: 991px) {
+    .boton-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 botones por fila en notebooks/tablets */
+    }
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 767px) {
+    .boton-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 botón por fila en dispositivos móviles */
+    }
+  }
+  
+  
 /*footer*/
 footer{
     
-    background-color: var(--color-inet);
+    background-color: var(--color-white);
     text-align: center;
     text-transform: uppercase;
     margin-top: auto;
