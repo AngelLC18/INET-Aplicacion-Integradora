@@ -1,25 +1,45 @@
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.parent{
+
+.bottom{
+  left: 15%;
+}
+
+.middle{
+  left: 6% ;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.parent {
   width: 390px;
   height: 844px;
   position: relative;
   background: white;
 }
-.logo{
+
+.logo {
   width: 252px;
   height: 96px;
-  left: 69px;
   top: 217px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   justify-content: center;
-  align-Items: center;
-  display: "inline-flex;
+  align-items: center;
 }
-.logo img{
+
+.logo img {
   width: 252px;
   height: 96px;
 }
@@ -32,6 +52,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .wrapper .credit {
   position: absolute;
   width: 90%;
@@ -50,43 +71,49 @@
   width: 36px;
   height: 36px;
   border-radius: 5px;
-  box-shadow: 0 0 10px #A4F9FC;
+  box-shadow: 0 0 10px #a4f9fc;
 }
+
 .block:nth-child(1) {
   left: 0;
-  background-color: #0E68AF;
+  background-color: #0e68af;
 }
+
 .block:nth-child(2) {
   left: 54px;
   background-color: #1574bc;
 }
+
 .block:nth-child(3) {
   left: 108px;
   background-color: #1b7fcc;
 }
+
 .block:nth-child(4) {
   left: 162px;
   background-color: #1380d3;
 }
+
 .block:nth-child(5) {
   left: 216px;
   background-color: #1f95ee;
 }
+
 @keyframes slide {
-  0%,
-  8% {
+  0%, 8% {
     transform: translateX(0);
     background-color: #0f5d99;
   }
-  92%,
-  100% {
+  92%, 100% {
     transform: translateX(216px);
     background-color: #199cff;
   }
 }
+
 .mover {
   animation: slide 1.3s infinite alternate cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 @keyframes jump1 {
   0% {
     top: 0;
@@ -106,8 +133,7 @@
     height: 24px;
     transform: rotateZ(-180deg);
   }
-  23%,
-  70% {
+  23%, 70% {
     top: 0;
     height: 36px;
     transform: rotateZ(-180deg);
@@ -126,13 +152,15 @@
     height: 24px;
     transform: rotateZ(0);
   }
-  94%,
-  100% {
+  94%, 100% {
     top: 0;
     height: 36px;
     transform: rotateZ(0);
   }
 }
+
+/* Resto del código de las animaciones... */
+
 @keyframes jump2 {
   0% {
     top: 0;

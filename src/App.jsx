@@ -8,7 +8,6 @@ function App() {
         style={{
           width: 281,
           height: 105,
-          left: 55,
           top: 463,
           position: "absolute",
           justifyContent: "center",
@@ -31,7 +30,7 @@ function App() {
         style={{
           width: 343,
           height: 192,
-          left: 24,
+          
           top: 187,
           position: "absolute",
           justifyContent: "center",
