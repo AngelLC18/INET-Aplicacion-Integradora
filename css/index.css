@@ -70,16 +70,12 @@ main {
     border-radius: 12px;
     transition: all 0.3s;
     background-size: 400px auto;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.287),
-        rgba(0, 0, 0, 0.287)
-      ),
-      url(https://aptus.com.ar/wp-content/uploads/2022/08/aulas-moviles.jpeg);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--color-white);
+    color: var(--color-black  );
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -94,7 +90,7 @@ main {
         rgba(0, 0, 0, 0.674),
         rgba(0, 0, 0, 0.685)
       ),
-      url(https://aptus.com.ar/wp-content/uploads/2022/08/aulas-moviles.jpeg);
+      
   }
 /* Media query para notebooks/tablets */
 @media (max-width: 991px) {
