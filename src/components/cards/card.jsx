@@ -2,10 +2,11 @@ import React from "react";
 import "./cards.css";
 import { useState } from "react";
 const Card = () => {
-  const [checkedCard, setCheckedCard] = useState("card-0");
+  const [checkedCard, setCheckedCard] = useState(null);
 
   const handleChange = (event) => {
-    setCheckedCard(event.target.id);
+    const clickedCard = event.target.id;
+    setCheckedCard(clickedCard === checkedCard ? null : clickedCard);
   };
 
   return (
@@ -70,6 +71,57 @@ const Card = () => {
         onChange={handleChange}
       />
       <label className="content" for="card-4">
+        <span className="icon">
+          <i className="fas fa-snowflake"></i>
+        </span>
+        <h3 className="card-title">
+          Albergues y residencias estudiantiles
+          <span className="subtitle">@punttim</span>
+        </h3>
+      </label>
+      <input
+        className="radio"
+        type="radio"
+        name="card"
+        id="card-5"
+        checked={checkedCard === "card-5"}
+        onChange={handleChange}
+      />
+      <label className="content" for="card-5">
+        <span className="icon">
+          <i className="fas fa-snowflake"></i>
+        </span>
+        <h3 className="card-title">
+          Albergues y residencias estudiantiles
+          <span className="subtitle">@punttim</span>
+        </h3>
+      </label>
+      <input
+        className="radio"
+        type="radio"
+        name="card"
+        id="card-6"
+        checked={checkedCard === "card-6"}
+        onChange={handleChange}
+      />
+      <label className="content" for="card-6">
+        <span className="icon">
+          <i className="fas fa-snowflake"></i>
+        </span>
+        <h3 className="card-title">
+          Albergues y residencias estudiantiles
+          <span className="subtitle">@punttim</span>
+        </h3>
+      </label>
+      <input
+        className="radio"
+        type="radio"
+        name="card"
+        id="card-7"
+        checked={checkedCard === "card-7"}
+        onChange={handleChange}
+      />
+      <label className="content" for="card-7">
         <span className="icon">
           <i className="fas fa-snowflake"></i>
         </span>
