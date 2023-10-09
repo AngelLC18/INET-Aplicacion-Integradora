@@ -10,126 +10,70 @@ const Card = () => {
   };
 
   return (
-    <div className="general-container">
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-1"
-        checked={checkedCard === "card-1"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-1">
-        <span className="icon">
-          <i className="fas fa-sun"></i>
-        </span>
-        <h3 className="card-title">
-          Aulas Talleres Móviles
-          <span className="subtitle">@hed</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-2"
-        checked={checkedCard === "card-2"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-2">
-        <span className="icon">
-          <i className="fas fa-cloud-rain"></i>
-        </span>
-        <h3 className="card-title">
-          Inversión en Educación Técnico Profesional
-          <span className="subtitle">@lolaguti</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-3"
-        checked={checkedCard === "card-3"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-3">
-        <span className="icon">
-          <i className="fas fa-cloud-moon"></i>
-        </span>
-        <h3 className="card-title">
-          Catálogo de Instituciones y oferta formativa
-          <span className="subtitle">@quentindrphotography</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-4"
-        checked={checkedCard === "card-4"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-4">
-        <span className="icon">
-          <i className="fas fa-snowflake"></i>
-        </span>
-        <h3 className="card-title">
-          Albergues y residencias estudiantiles
-          <span className="subtitle">@punttim</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-5"
-        checked={checkedCard === "card-5"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-5">
-        <span className="icon">
-          <i className="fas fa-snowflake"></i>
-        </span>
-        <h3 className="card-title">
-          Albergues y residencias estudiantiles
-          <span className="subtitle">@punttim</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-6"
-        checked={checkedCard === "card-6"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-6">
-        <span className="icon">
-          <i className="fas fa-snowflake"></i>
-        </span>
-        <h3 className="card-title">
-          Albergues y residencias estudiantiles
-          <span className="subtitle">@punttim</span>
-        </h3>
-      </label>
-      <input
-        className="radio"
-        type="radio"
-        name="card"
-        id="card-7"
-        checked={checkedCard === "card-7"}
-        onChange={handleChange}
-      />
-      <label className="content" for="card-7">
-        <span className="icon">
-          <i className="fas fa-snowflake"></i>
-        </span>
-        <h3 className="card-title">
-          Albergues y residencias estudiantiles
-          <span className="subtitle">@punttim</span>
-        </h3>
-      </label>
+    <div class="cards-list">
+      <div class="card 1">
+        <div class="card_image">
+          {" "}
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />{" "}
+        </div>
+        <div class="card_title title-white">
+          <p>Card Title</p>
+        </div>
+      </div>
+
+      <div class="card 2">
+        <div class="card_image">
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />
+        </div>
+        <div class="card_title title-white">
+          <p>Card Title</p>
+        </div>
+      </div>
+
+      <div class="card 3">
+        <div class="card_image">
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />
+        </div>
+        <div class="card_title">
+          <p>Card Title</p>
+        </div>
+      </div>
+
+      <div class="card 4">
+        <div class="card_image">
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />
+        </div>
+        <div class="card_title title-black">
+          <p>Card Title</p>
+        </div>
+      </div>
+      <div class="card 5">
+        <div class="card_image">
+          {" "}
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />{" "}
+        </div>
+        <div class="card_title title-white">
+          <p>Card Title</p>
+        </div>
+      </div>
+      <div class="card 6">
+        <div class="card_image">
+          {" "}
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />{" "}
+        </div>
+        <div class="card_title title-white">
+          <p>Card Title</p>
+        </div>
+      </div>
+      <div class="card 7">
+        <div class="card_image">
+          {" "}
+          <img src="https://imgs.search.brave.com/xvvGnk0zqBUA0YmR20NLpPn8WZfA1iqs6ozKyPO-0B4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjI2/NDY0MTU4L3Bob3Rv/L2NhdC13aXRoLW9w/ZW4tbW91dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFy/OURDVmt3S21fZHpm/amtlTjVmb0NCcDdj/M0VmQkZfaTJBMGV0/WWlKT0E9" />{" "}
+        </div>
+        <div class="card_title title-white">
+          <p>Card Title</p>
+        </div>
+      </div>
     </div>
   );
 };
