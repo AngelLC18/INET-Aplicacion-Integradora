@@ -1,25 +1,31 @@
 import "./App.css";
-import Card from "./components/cards/card";
+import Footer from "./components/footer/Footer";
+import NavbarV2 from "./components/navbar/Nav-barV2";
+import Main from "./components/main/Main";
+import Accesibility_tools from "./components/Accessibility_tools";
 const App = () => {
+  function getScrollY() {
+    return window.scrollY || window.pageYOffset;
+  }
+
   window.addEventListener("scroll", () => {
     const toTop = document.querySelector(".to-top");
-    if (window.pageYOffset > 100) {
+    if (getScrollY() > 0) {
       toTop.classList.add("active");
     } else {
       toTop.classList.remove("active");
     }
   });
+
   return (
-    <div className="parent">
-      <header>
-        <nav className="nav-main">
-          <img src="/src/assets/INET white.png" alt="inet" height="43px" />
-        </nav>
-      </header>
-      <Card />
+    <div className="dark:text-gray-100 bg-[#0e68af] dark:bg-slate-900 w-full min-h-[100vh]  flex flex-wrap flex-row">
+      <NavbarV2 />
+      <Main />
+      <Footer />
       <a href="#" className="to-top">
-        <i className="fa-solid fa-arrow-up"></i>
+        <i className="fa-solid fa-chevron-up"></i>
       </a>
+      <Accesibility_tools />
     </div>
   );
 };
