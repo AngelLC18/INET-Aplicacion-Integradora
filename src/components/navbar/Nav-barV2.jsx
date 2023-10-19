@@ -13,7 +13,7 @@ const NavbarV2 = () => {
     });
   }, []);
   return (
-    <nav className="bg-transparent sticky h-[64px] w-full z-20 top-0 left-0 transition-all">
+    <nav className=" sticky h-[64px] w-full z-20 top-0 left-0 transition-all">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <img
           className="object-contain h-7"
