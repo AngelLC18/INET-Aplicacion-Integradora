@@ -11,7 +11,7 @@ const Card = (props) => {
         ></img>
       </div>
       <span className="min-w-[31px] min-h-[31px] left-[9px] top-[115px] absolute bg-white rounded-full"></span>
-      <p className="w-[25px] h-[11px] left-[45px] top-[123px] absolute text-white text-xs font-normal font-['Roboto Flex']">
+      <p className=" h-[11px] left-[45px] top-[123px] absolute text-white text-xs font-normal font-['Roboto Flex']">
         {props.text}
       </p>
     </div>
